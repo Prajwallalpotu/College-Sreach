@@ -1,0 +1,16 @@
+CREATE TABLE colleges (
+    college_id INT AUTO_INCREMENT PRIMARY KEY,
+    college_name VARCHAR(100) NOT NULL,
+    state VARCHAR(50),
+    city VARCHAR(50),
+    description TEXT,
+    rating DECIMAL(2, 1),
+    image_url VARCHAR(255)
+);
+
+
+INSERT INTO colleges (college_name, state, city, description, rating, image_url) VALUES
+    ('IIT Bombay', 'Maharashtra', 'Mumbai', 'Description of IIT Bombay...', 5.0, 'images/iit_bombay.webp'),
+    ('IsquareIT', 'Maharashtra', 'Pune', 'Description of ISquareIT...', 3.6, 'images/iit_bombay.webp'),
+    ('College 3', 'Andhra Pradesh', 'Visakhapatnam', 'Description of College 3...', 4.2, 'images/college3.jpg');
+
